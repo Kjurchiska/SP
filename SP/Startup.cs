@@ -22,8 +22,8 @@ namespace SP
 				app.UseDeveloperExceptionPage();
 			}
 
-			app.UseHttpsRedirection(); //
-			app.UseStaticFiles(); //
+			app.UseHttpsRedirection(); 
+			app.UseStaticFiles(); 
 
 			app.UseRouting();
 

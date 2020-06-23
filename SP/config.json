@@ -1,0 +1,8 @@
+{
+	"Colors": {
+		"Favorite": "blue"
+	},
+	"ConnectionStrings": {
+		"DutchConnectionString": "Server=(localdb)\\MSSQLLocalDB;Initial Catalog=VIP;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;"
+	}
+}

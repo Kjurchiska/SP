@@ -5,10 +5,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\ViewModels\" />
+    <Compile Remove="bin\Debug\node_modules\**" />
+    <Compile Remove="bin\node_modules\**" />
+    <Compile Remove="wwwroot\bootstrap\**" />
+    <Compile Remove="wwwroot\node_modules\**" />
+    <Content Remove="bin\Debug\node_modules\**" />
+    <Content Remove="bin\node_modules\**" />
+    <Content Remove="wwwroot\bootstrap\**" />
+    <Content Remove="wwwroot\node_modules\**" />
+    <EmbeddedResource Remove="bin\Debug\node_modules\**" />
+    <EmbeddedResource Remove="bin\node_modules\**" />
+    <EmbeddedResource Remove="wwwroot\bootstrap\**" />
+    <EmbeddedResource Remove="wwwroot\node_modules\**" />
+    <None Remove="bin\Debug\node_modules\**" />
+    <None Remove="bin\node_modules\**" />
+    <None Remove="wwwroot\bootstrap\**" />
+    <None Remove="wwwroot\node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.0.0" />
     <PackageReference Include="GitHub" Version="1.24.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
